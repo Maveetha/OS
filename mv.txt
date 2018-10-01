@@ -1,0 +1,78 @@
+
+Conversation opened. 3 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+
+3 of 38
+ 
+(no subject) 
+Inbox
+x 
+
+Butterfly Morpho <maveetha4@gmail.com>
+Attachments20 Feb (1 day ago)
+to mavrrtha4 
+
+23 Attachments
+
+Mail Delivery Subsystem	
+Address not found Your message wasn't delivered to mavrrtha4@gmail.com becaus...
+Attachments20 Feb (1 day ago)
+
+Butterfly Morpho <maveetha4@gmail.com>
+Attachments20 Feb (1 day ago)
+to me 
+
+Final-Recipient: rfc822; mavrrtha4@gmail.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp; The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser u13sor539959lff.17 - gsmtp
+Last-Attempt-Date: Tue, 20 Feb 2018 00:11:18 -0800 (PST)
+
+
+---------- Forwarded message ----------
+From: Butterfly Morpho <maveetha4@gmail.com>
+To: mavrrtha4@gmail.com
+Cc: 
+Bcc: 
+Date: Tue, 20 Feb 2018 13:41:16 +0530
+Subject: 
+
+
+
+
+3 Attachments
+	
+Click here to Reply or Forward
+0.45 GB (3%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 31 minutes ago
+Details
+
+
+#include<sys/types.h>
+#include<sys/stat.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<fcntl.h>
+main(int argc,char*argv[])
+{
+int i,fd1,fd2;
+char *file1,*file2,buf[2];
+file1=argv[1];
+file2=argv[2];
+printf("file1=%sfile2=%s",file1,file2);
+fd1=open(file1,O_RDONLY,0777);
+fd2=creat(file2,0777);
+while(i=read(fd1,buf,1)>0)
+write(fd2,buf,1);
+remove(file1);
+close(fd1);
+close(fd2);
+}
+
+mv.c
+Displaying address.c.

@@ -1,0 +1,94 @@
+
+Conversation opened. 3 messages. All messages read.
+
+Skip to content
+Using Gmail with screen readers
+in:sent 
+
+3 of 38
+ 
+(no subject) 
+Inbox
+x 
+
+Butterfly Morpho <maveetha4@gmail.com>
+Attachments20 Feb (1 day ago)
+to mavrrtha4 
+
+23 Attachments
+
+Mail Delivery Subsystem	
+Address not found Your message wasn't delivered to mavrrtha4@gmail.com becaus...
+Attachments20 Feb (1 day ago)
+
+Butterfly Morpho <maveetha4@gmail.com>
+Attachments20 Feb (1 day ago)
+to me 
+
+Final-Recipient: rfc822; mavrrtha4@gmail.com
+Action: failed
+Status: 5.0.0
+Diagnostic-Code: smtp; The email account that you tried to reach does not exist. Please try double-checking the recipient's email address for typos or unnecessary spaces. Learn more at https://support.google.com/mail/?p=NoSuchUser u13sor539959lff.17 - gsmtp
+Last-Attempt-Date: Tue, 20 Feb 2018 00:11:18 -0800 (PST)
+
+
+---------- Forwarded message ----------
+From: Butterfly Morpho <maveetha4@gmail.com>
+To: mavrrtha4@gmail.com
+Cc: 
+Bcc: 
+Date: Tue, 20 Feb 2018 13:41:16 +0530
+Subject: 
+
+
+
+
+3 Attachments
+	
+Click here to Reply or Forward
+0.45 GB (3%) of 15 GB used
+Manage
+Terms - Privacy
+Last account activity: 27 minutes ago
+Details
+
+
+ #include<stdio.h>
+main()
+{
+int n,a[10],b[10],t[10],w[10],g[10],i,m;
+float att=0,awt=0;
+            for(i=0;i<10;i++)
+            {
+                        a[i]=0; b[i]=0; w[i]=0; g[i]=0;
+            }
+printf("enter the number of process");
+            scanf("%d",&n);
+printf("enter the burst times");
+            for(i=0;i<n;i++)
+                scanf("%d",&b[i]);
+    printf("\nenter the arrival times");
+            for(i=0;i<n;i++)
+                scanf("%d",&a[i]);
+    g[0]=0;
+             for(i=0;i<10;i++)
+                   g[i+1]=g[i]+b[i];
+             for(i=0;i<n;i++)
+            {     
+w[i]=g[i]-a[i];
+                        t[i]=g[i+1]-a[i];
+                        awt=awt+w[i];
+                        att=att+t[i]; 
+            }
+     awt =awt/n;
+            att=att/n;
+            printf("\n\tprocess\twaiting time\tturn arround time\n");
+            for(i=0;i<n;i++)
+            {
+                        printf("\tp%d\t\t%d\t\t%d\n",i,w[i],t[i]);
+            }
+printf("the average waiting time is %f\n",awt);
+printf("the average turn around time is %f\n",att);
+}
+fcfs1.c
+Displaying address.c.

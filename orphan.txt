@@ -1,0 +1,23 @@
+#include<stdlib.h>
+#include<sys/types.h>
+#include<unistd.h>
+main()
+{
+int id;
+printf("\n before fork()");
+id=fork();
+if(id==0)
+{
+printf("\n child has started %d",getpid());
+printf("parent of child%d",getpid());
+printf("child prints 1 item");
+sleep(10);
+printf("child prints 2 item ");
+}
+else
+{
+printf(" \n parent has started %d",getpid());
+printf("\n parent of parent process %d",getppid());
+}
+printf("\nafter fork()");
+} 
